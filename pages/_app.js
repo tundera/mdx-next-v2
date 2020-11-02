@@ -5,6 +5,11 @@ import { Button } from "theme-ui";
 const mdComponents = {
   h1: (props) => <h1 style={{ color: "tomato" }} {...props} />,
   button: (props) => <Button {...props}>{props.children}</Button>,
+  SubmitButton: (props) => (
+    <Button type="submit" {...props}>
+      Submit
+    </Button>
+  ),
 };
 
 export default ({ Component, pageProps }) => (
